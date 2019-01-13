@@ -6,7 +6,7 @@ function Nav(props) {
     <nav class="navbar">
       <ul>
         <li class="brand"><a href="/">Clicky Game</a></li>
-        <li class="">You guessed correctly!</li>
+        <li class=""> { `${props.score ? "You guessed correctly!" : "Click an Image to Begin!"}`}</li>
         <li>Score: {props.score} | Top Score: {props.highScore}</li>
       </ul>
     </nav>
