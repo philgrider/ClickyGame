@@ -71,6 +71,7 @@ class App extends Component {
             highScore={this.state.highScore}>
         </Nav>
         <Header></Header>
+        <div className="container">
         {this.state.images.map(Image => (
           <Body
             chooseImage={this.chooseImage}
@@ -80,6 +81,7 @@ class App extends Component {
             image={Image.image}
           />
         ))}
+        </div>
         <Footer></Footer>
       </Wrapper>
     );
